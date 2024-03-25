@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonball</title>
+</head>
+
+<script src="script.js"></script>
+
+<style>
+   
+
+    #parent {
+        position:relative;
+    }
+
+    #child_1, #child_2 {
+        width: 1000px;
+        height: 200px;        
+    }
+
+    #child_1 {
+        z-index: 1;
+    }
+
+    #child_2 {
+        z-index: 2;
+        font-size: 80px;
+        margin: auto;
+        color: red;
+    }
+
+    .banner {
+        width: 1900px;
+        height: 400px;
+    }
+
+
+    .container {
+        background-image: url(Hintergrund.jpg);
+        height: 1000px;
+        width: 1900px;
+        
+    }
+
+    .box {
+        font-size: 30px;
+        width:30%;
+        float: left;
+        margin-top: 40px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .skills {
+        font-size: 25px;
+        width:65%;
+        float:left;
+        margin-right: 10px;
+        margin-top: 50px;
+    }
+
+    .skillBox {
+        color:black;
+        background-color: grey;
+        
+        border-style:solid;
+        margin-bottom: 5px;
+        width: 95%;
+        height: 30px;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+
+    .skill {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .skillWert {
+        font-size: 20px;
+        width: 5%;
+        margin-right: 10px;
+        
+    }
+
+    .skillÜberschrift {
+        font-size: 30px;
+    }
+
+    .skillOberBox {
+        width:95%;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+
+    .skillKreuz {
+        margin-left: 10px;
+        height: 30px;
+    }
+
+</style>
+
+<body>
+
+
+
+    <div id="parent">
+        <div id="child_1">
+            <img class="banner" src="Banner.jpg">
+        </div>
+        <h1 id="child_2"> 
+        Dragonball Attribute
+        </h1>
+    </div>
+
+        <div class="container"> 
+            
+            <div class="box">    
+                <nav>
+                Startseite<br></nav>
+                <nav>Charakter<br></nav>
+                <nav><a href="Attribute.html" > Attribute</a><br></nav>
+                <nav>Fähigkeiten<br></nav>
+                
+            </div>
+
+            <div class="skills">
+                <div class="skillÜberschrift">Fähigkeiten</div>
+
+
+
+                <div class="skillOberBox">
+                    <div class="skillBox">
+                        <div class="skill">Stärke</div>
+
+                         <div class="skillWert"  id="stärkeWert">1</div>
+                    </div>
+                    <div class="skillKreuz">
+                        <button onclick="strUp()">+</button>
+                    </div>
+                </div>
+
+
+
+                <div class="skillOberBox">
+                    <div class="skillBox">
+                        <div class="skill">Schnelligkeit</div>
+
+                         <div class="skillWert" id="speedWert">1</div>
+                    </div>
+                    <div class="skillKreuz">
+                        <button onclick="speedUp()">+</button>
+                    </div>
+                </div>
+
+                <div class="skillOberBox">
+                    <div class="skillBox">
+                        <div class="skill">Leben</div>
+
+                         <div class="skillWert" id="lifeWert">1</div>
+                    </div>
+                    <div class="skillKreuz">
+                        <button onclick="lifeUp()">+</button>
+                    </div>
+                </div>
+
+                <div class="skillOberBox">
+                    <div class="skillBox">
+                        <div class="skill">Verteidigung</div>
+
+                        <div class="skillWert" id="defWert">1</div>
+                    </div>
+                    <div class="skillKreuz">
+                        <button onclick="defUp()">+</button>
+                    </div>
+                </div>
+
+                
+
+                </div>
+
+                
+            </div>
+
+        </div>
+    
+</body>
+</html>
