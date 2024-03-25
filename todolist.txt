@@ -1,0 +1,5 @@
+Wäsche,waschen,12.12.23,erledigt
+Wischen,Boden wischen und saugen,12.02.24,erledigt
+Handy Reperatur,Handy aufschrauben und reparieren,24.03.2024,erledigt
+Pflanzen gießen,Fülle die Gießkanne auf und gieße die Pflanzen innerhalb und außerhalb des Hauses,24.03.2024,ausstehend
+Computer,Zocken bis in die Nacht,25.03.2024,ausstehend
